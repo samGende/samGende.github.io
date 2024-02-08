@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/samgende/static/css/main.073c9b0a.css",
-    "main.js": "/samgende/static/js/main.f9963199.js",
-    "static/js/787.4a61ee20.chunk.js": "/samgende/static/js/787.4a61ee20.chunk.js",
+    "main.css": "/samgende/static/css/main.f855e6bc.css",
+    "main.js": "/samgende/static/js/main.ad162a89.js",
+    "static/js/592.6cb84651.chunk.js": "/samgende/static/js/592.6cb84651.chunk.js",
     "static/media/logo.svg": "/samgende/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/samgende/index.html",
-    "main.073c9b0a.css.map": "/samgende/static/css/main.073c9b0a.css.map",
-    "main.f9963199.js.map": "/samgende/static/js/main.f9963199.js.map",
-    "787.4a61ee20.chunk.js.map": "/samgende/static/js/787.4a61ee20.chunk.js.map"
+    "main.f855e6bc.css.map": "/samgende/static/css/main.f855e6bc.css.map",
+    "main.ad162a89.js.map": "/samgende/static/js/main.ad162a89.js.map",
+    "592.6cb84651.chunk.js.map": "/samgende/static/js/592.6cb84651.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.f9963199.js"
+    "static/css/main.f855e6bc.css",
+    "static/js/main.ad162a89.js"
   ]
 }
