@@ -1,0 +1,23 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+
+export const article = {
+  author: 'Sam Gende',
+  date: '2024-02-14',
+  title: 'Decision function of Support Vector Machines',
+  description:
+    'How do we choose a class?'
+
+}
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+}
+
+export default (props) => <ArticleLayout article={article} {...props} />
+
+A common machine learning problem is having a set of data that needs to be split into two classes. One way to do this is using a support vector machine. For starters we need to define what the data and labels for the classes look like. This is relatively flexible when it comes to SVMs the individual data points just need to be vectors of the same dimension. The labels are more restrictive in that there can only be two classes into which the points can be classified as.
+
+We will first consider the 2d space since it is visually the easiest to digest, this means each of our data points will be a vector with the first number being the x coordinate and the second being a y coordinate. These will then be labeled with the class labels 1 or -1.
+
+Now we can jump into how a SVM actually works, the goal is to properly classify all of our points. We can do this with a decision function. This function will take in a point x from n^2 and output a class label 1 or -1. We can define this function as d(x) = w xT + b here w from n^2 and b from n are parameters that we can calculate to get an optimal decision function. In the function we take the dot product of w and x then add a bias b to get the output. With this definition we have one problem, the output is not always 1 or -1 to solve this we simply take the sign of the output and return 1 if the result is positive and -1 if it is negative. With this function an SVM can classify a new point into labels 1 or –1. Now we need to calculate an optimal w and b for the decision function this will be covered in the next article.
