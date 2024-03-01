@@ -17,11 +17,12 @@ import logoPlanetaria from '@/images/logos/planetaria.svg'
 import skyGenLogo from '@/images/photos/skyGenLogo.png'
 import fraunhoferLogo from "@/images/photos/fraunhofer_iml_logo.jpeg"
 import noodlesLogo from "@/images/photos/noodlesLogo.png"
-import image1 from '@/images/photos/image-1.jpg'
-import image2 from '@/images/photos/image-2.jpg'
-import image3 from '@/images/photos/image-3.jpg'
-import image4 from '@/images/photos/image-4.jpg'
-import image5 from '@/images/photos/image-5.jpg'
+import image1 from '@/images/cruyff.jpeg' 
+import image2 from '@/images/Berlin.jpeg'
+import image3 from '@/images/italy.jpg'
+import image4 from '@/images/morroco.jpeg'
+import image5 from '@/images/csm_Campusansicht_Winter_baege_222370_72accf55bd.jpeg'
+
 import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
 
@@ -288,26 +289,24 @@ export default async function Home() {
             years and will soon be completing by bachelors degree in Computer Science. 
           </p>
           <div className="mt-6 flex gap-6">
-            <SocialLink href="#" aria-label="Follow on X" icon={XIcon} />
             <SocialLink
-              href="#"
+              href="https://www.instagram.com/sam_gende/"
               aria-label="Follow on Instagram"
               icon={InstagramIcon}
             />
             <SocialLink
-              href="#"
+              href="https://github.com/samGende"
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
             />
             <SocialLink
-              href="#"
+              href="https://www.linkedin.com/in/sam-gende-3952b1211/"
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
             />
           </div>
         </div>
       </Container>
-      <Photos />
       <Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="flex flex-col gap-16">
@@ -321,6 +320,7 @@ export default async function Home() {
           </div>
         </div>
       </Container>
+      <Photos />
     </>
   )
 }
