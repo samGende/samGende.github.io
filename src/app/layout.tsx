@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: {
     template: '%s - Sam Gende',
     default:
-      'Sam Gende - Software designer, founder, and amateur astronaut',
+      'Sam Gende - Student, Research Assistant',
   },
   description:
     'I’m Sam',

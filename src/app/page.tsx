@@ -226,25 +226,18 @@ function Resume() {
           <Role key={roleIndex} role={role} />
         ))}
       </ol>
-      <a href="link" download="SamuelGendeResume.pdf">
+
+      <a href="/SamuelGendeResume.pdf" download="SamuelGendeResume.pdf">
       <Button variant="secondary" className="group mt-6 w-full">
         Download CV
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button>
-      </a>
+        </a>
     </div>
   )
 }
 
-const onButtonClick = () => {
-  const pdfUrl = "Sample.pdf";
-  const link = document.createElement("a");
-  link.href = pdfUrl;
-  link.download = "document.pdf"; // specify the filename
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-}
+
 
 function Photos() {
   let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
