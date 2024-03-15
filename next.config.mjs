@@ -8,7 +8,7 @@ const nextConfig = {
 }
 
 const withMDX = nextMDX('@next/mdx')({
-  extension: /\.mdx?$/,
+  extension: /\.mdx$/,
   options: {
     remarkPlugins: [remarkGfm],
     rehypePlugins: [rehypePrism],
@@ -16,5 +16,13 @@ const withMDX = nextMDX('@next/mdx')({
 })
 module.exports = withMDX({
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'md', 'mdx'],
+  module: {
+    rules: [
+      {
+        test: /\.mdx$/,
+        use: ['babel-loader', '@mdx-js/loader'],
+      },
+    ],
+  },
 })
 export default withMDX(nextConfig)
