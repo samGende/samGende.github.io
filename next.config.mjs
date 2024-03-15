@@ -14,6 +14,7 @@ const withMDX = nextMDX('@next/mdx')({
     rehypePlugins: [rehypePrism],
   },
 })
-
-module.exports = withMDX()
+module.exports = withMDX({
+  pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'md', 'mdx'],
+})
 export default withMDX(nextConfig)
