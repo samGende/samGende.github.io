@@ -25,6 +25,15 @@ async function importArticle(
   }
 }
 
+export async function getStaticProps() {
+  const articles = await getAllArticles();
+  return {
+    props: {
+      articles,
+    },
+  };
+}
+
 export async function getAllArticles() {
   let articleFilenames = await glob('*/page.mdx', {
     cwd: './src/app/articles',
