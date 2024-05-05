@@ -15,6 +15,7 @@ export const metadata = {
 }
 
 export default (props) => <ArticleLayout article={article} {...props} />
+
 A common machine learning problem is having a set of data that needs to be split into two classes. One way to do this is using a support vector machine. For starters we need to define what the data and labels for the classes look like. This is relatively flexible when it comes to SVMs the individual data points just need to be vectors of the same dimension. The labels are more restrictive in that there can only be two classes into which the points can be classified as.
 
 We will first consider the 2d space since it is visually the easiest to digest, this means each of our data points will be a vector with the first number being the x coordinate and the second being a y coordinate. These will then be labeled with the class labels 1 or -1.
