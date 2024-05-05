@@ -15,11 +15,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/page.js"
-    ],
-    "/articles/crafting-a-design-system-for-a-multiplanetary-future/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/articles/crafting-a-design-system-for-a-multiplanetary-future/page.js"
     ]
   }
 }
