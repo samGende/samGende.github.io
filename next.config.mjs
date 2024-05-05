@@ -13,6 +13,15 @@ const withMDX = nextMDX({
     remarkPlugins: [remarkGfm],
     rehypePlugins: [rehypePrism],
   },
+  webpack(config, options) {
+    // Add MDX loader for .mdx files
+    config.module.rules.push({
+      test: /\.mdx$/,
+      use: ['babel-loader', '@mdx-js/loader'],
+    })
+
+    return config
+  },
 })
 
 export default withMDX(nextConfig)
