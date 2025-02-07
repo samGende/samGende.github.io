@@ -16,9 +16,10 @@ import logoFacebook from '@/images/logos/facebook.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
 import skyGenLogo from '@/images/photos/skyGenLogo.png'
 import fraunhoferLogo from "@/images/photos/fraunhofer_iml_logo.jpeg"
+import fbtLogo from "@/images/photos/FBT_logo.png"
 import noodlesLogo from "@/images/photos/noodlesLogo.png"
 import image1 from '@/images/cruyff.jpeg' 
-import image2 from '@/images/Berlin.jpeg'
+import image2 from '@/images/mke.jpg'
 import image3 from '@/images/italy.jpg'
 import image4 from '@/images/morroco.jpeg'
 import image5 from '@/images/csm_Campusansicht_Winter_baege_222370_72accf55bd.jpeg'
@@ -190,17 +191,27 @@ function Role({ role }: { role: Role }) {
 function Resume() {
   let resume: Array<Role> = [
     {
+      company: 'Flatbed Tools',
+      title: 'Cloud Architect',
+      logo: fbtLogo,
+      start: 'November 2024',
+      end: {
+        label: 'Current',
+        dateTime: new Date().getFullYear().toString(),
+      },
+    },
+    {
       company: 'Fraunhofer IML',
       title: 'Student Research Assistant (AI and Image Processing)',
       logo: fraunhoferLogo,
       start: 'March 2023',
       end: {
-        label: 'Present',
+        label: 'September 2024',
         dateTime: new Date().getFullYear().toString(),
       },
     },
     {
-      company: 'SkyGen',
+      company: 'SkyGen USA',
       title: 'Software Development Intern',
       logo: skyGenLogo,
       start: 'June 2021',
@@ -277,9 +288,7 @@ export default async function Home() {
             International Student, Research Assistant, interested in building smart stuff
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I'm Sam Gende a soon to be graduate student, that is looking to contiunue to
-            build cool machine learning systems. I have lived in Dortmund Germany the past two 
-            years and will soon be completing by bachelors degree in Computer Science. 
+          I'm Sam Gende, a recent graduate looking to continue building cool machine learning systems. I have lived in Dortmund, Germany, for the past three years and completed my degree in computer science with a focus on machine learning.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
