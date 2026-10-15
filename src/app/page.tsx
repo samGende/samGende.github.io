@@ -192,7 +192,7 @@ function Resume() {
   let resume: Array<Role> = [
     {
       company: 'Flatbed Tools',
-      title: 'Cloud Architect',
+      title: 'Software Engineer',
       logo: fbtLogo,
       start: 'November 2024',
       end: {
